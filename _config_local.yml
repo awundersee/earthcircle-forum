@@ -1,0 +1,32 @@
+title: "EarthCircle"
+slogan: "Für einen geschlossenen Kreislauf der Natur"
+description: "Projektseite für den Kurs IPWA01-01 – Programmierung von Webanwendungsoberflächen"
+baseurl: ""
+url: "http://localhost:4000"
+
+markdown: kramdown
+
+# Collections definieren (wichtig für _pages)
+collections:
+  pages:
+    output: true
+
+# Standard für Seiten im _pages-Ordner
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: default
+      permalink: "/:basename/"
+
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      permalink: "/blog/:basename/"
+
+# Spezieller Fall für 404.md
+  - scope:
+      path: "404.md"
+    values:
+      permalink: /404.html

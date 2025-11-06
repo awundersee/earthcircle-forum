@@ -1,0 +1,27 @@
+  <!-- header.html -->
+  <header class="text-primary px-1 px-sm-2 px-md-3 py-3 py-md-4 px-lg-4 px-xl-5 bg-white">
+	<div class="header-elem-wrapper container-fluid d-flex justify-content-between align-items-center">
+		<!-- Logo -->
+		<a href="{{ site.baseurl }}/" class="d-flex align-items-center text-decoration-none text-primary logo-wrapper">
+			<img src="{{ site.baseurl }}/assets/img/template/logo-primary.svg" alt="Logo" class="header-logo">
+			<h1 class="mb-0 fw-bold mx-2">EarthCircle</h1>
+		</a>
+		<!-- Navigation -->
+		<div  class="d-flex">
+			<button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Menü ausklappen">
+				<div id="burger"><span></span><span></span><span></span><span></span></div>
+			</button>
+			<nav class="d-flex justify-content-between align-items-center collapse" id="navbarToggleExternalContent">
+				<div class="px-lg-3 px-xl-4 d-flex flex-column flex-lg-row">
+					<a href="{{ site.baseurl }}/co2-emissionen" class="nav-link text-primary m-lg-3 m-xxl-4 co2-emissionen">CO₂-Emissionen</a>
+					<a href="{{ site.baseurl }}/ueber-uns" class="nav-link text-primary m-lg-3 m-xxl-4 ueber-uns">Über Uns</a>
+					<a href="{{ site.baseurl }}/blog" class="nav-link text-primary m-lg-3 m-xxl-4 blog">Blog</a>
+					<a href="{{ site.baseurl }}/kontakt" class="nav-link text-primary m-lg-3 m-xxl-4 kontakt">Kontakt</a>
+				</div>
+				<div class="d-inline pt-3 pt-lg-1">
+					{% include socialIcons.html %}
+				</div>
+			</nav>
+		</div>
+	</div>
+  </header>

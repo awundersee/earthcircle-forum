@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  {% include head.html %}
+
+  {% assign clean_title = page.title
+    | replace: "ä", "ae"
+    | replace: "ö", "oe"
+    | replace: "ü", "ue"
+    | replace: "Ä", "Ae"
+    | replace: "Ö", "Oe"
+    | replace: "Ü", "Ue"
+    | replace: "ß", "ss"
+  %}
+
+  <body class="{{ clean_title | slugify }} bg-light">
+    
+    {% include header.html %}
+
+    <main class="z-2 position-relative bg-white">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>

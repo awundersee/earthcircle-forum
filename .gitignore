@@ -1,0 +1,58 @@
+# -----------------------------
+# macOS spezifische Dateien
+# -----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# -----------------------------
+# Node / NPM (falls du später mal JS-Tools nutzt)
+# -----------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+package.json
+package-log.json
+
+# -----------------------------
+# Jekyll spezifische Dateien
+# -----------------------------
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile
+Gemfile.lock
+
+# -----------------------------
+# Ruby / Bundler
+# -----------------------------
+.bundle/
+vendor/
+_plugins/
+no-cache.rb
+.ruby-version
+
+# -----------------------------
+# Babel
+# -----------------------------
+.babelrc
+
+# -----------------------------
+# Logs & temporäre Dateien
+# -----------------------------
+*.log
+*.tmp
+*.swp
+*.bak
+
+# -----------------------------
+# Lokale Skripte
+# -----------------------------
+gitpush.sh
+start-jekyll.sh
+compile-react.sh
+_config_prod.yml

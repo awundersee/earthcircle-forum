@@ -1,0 +1,27 @@
+<!-- head.html -->
+<head>
+    
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		{% if page.url == "/" %}
+			{{ site.title }}{% if site.slogan %} | {{ site.slogan }}{% endif %}
+		{% else %}
+			{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+		{% endif %}
+	</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/libs/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/libs/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/libs/css/montserrat.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/libs/css/phosphor.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+
+	<!-- Favicon -->
+	<link rel="icon" href="{{ site.baseurl }}/assets/img/template/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{ site.baseurl }}/assets/img/template/favicon-32x32.png" type="image/png" sizes="32x32">
+	<link rel="icon" href="{{ site.baseurl }}/assets/img/template/favicon-16x16.png" type="image/png" sizes="16x16">
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/template/apple-touch-icon.png" sizes="180x180">
+
+</head>
