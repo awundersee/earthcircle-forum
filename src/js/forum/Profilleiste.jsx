@@ -2,27 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useAuth } from "./authContext";
 
 export default function Profilleiste({profilForumLink, onLogout }) {
-  const { loggedIn, login, logout } = useAuth();
-  const [username, setUsername] = useState("");
-  
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (!token) return;
-
-    try {
-      const payload = JSON.parse(atob(token.split(".")[1]));
-      setUsername(payload.username || "");
-    } catch (err) {
-      console.error("Token konnte nicht gelesen werden", err);
-    }
-  }, []);
+  const { loggedIn, user, logout } = useAuth();
 
   const handleLogout = () => {
-    if (onLogout) onLogout();   // AuthContext.logout()
-    setUsername("");
+    if (onLogout) onLogout(); 
+    logout(); // setzt loggedIn und user automatisch
   };
 
-  if (!username) return null;
+  if (!loggedIn || !user) return null; // nichts anzeigen, wenn nicht eingeloggt
 
   return (
     <section className="border-bottom border-primary b-1">
@@ -32,7 +19,8 @@ export default function Profilleiste({profilForumLink, onLogout }) {
             <span>
               Hallo,{" "}
               <a href="/forum/profil" className="text-black">
-                <strong>{username}</strong>
+                <strong>{user.username}</strong>
+                {user.email && ` (${user.email})`}
               </a>
             </span>
 

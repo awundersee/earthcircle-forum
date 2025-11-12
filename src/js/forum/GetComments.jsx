@@ -37,7 +37,7 @@ export default function GetComments({ eintragID, loggedIn, maxEbene = 4 }) {
       benutzername:
         comment.benutzername && comment.benutzername !== "Du"
           ? comment.benutzername
-          : user?.username ?? "Unbekannt"
+          : user?.username ?? "Dir"
     };
   }
     
@@ -96,7 +96,7 @@ export default function GetComments({ eintragID, loggedIn, maxEbene = 4 }) {
             <span className="text-muted">am {new Date(comment.erstelltAm).toLocaleString()}</span>
           </div>
         )}
-        
+
         <div className={`margin-start-${level} col-md-8 col-xl-6 comment-wrapper py-3 d-flex flex-column ${highlightedComments.includes(comment.kommentarID) ? "new-comment" : ""}`}>
           <div style={{ whiteSpace: "pre-wrap" }} dangerouslySetInnerHTML={{ __html: comment.inhalt }} />
           <small className="text-muted">

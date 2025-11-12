@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Modal } from "bootstrap";
 import ReactDOM from "react-dom";
 import API_BASE from "../config";
 import { useAuth } from "./authContext";
@@ -15,13 +16,13 @@ export default function DeleteProfile() {
 
   const openModal = () => {
     const bootstrap = window.bootstrap;
-    modalInstance = new bootstrap.Modal(modalRef.current);
+    modalInstance = new Modal(modalRef.current);
     modalInstance.show();
   };
 
   const closeModal = () => {
     const bootstrap = window.bootstrap;
-    modalInstance = bootstrap.Modal.getInstance(modalRef.current);
+    modalInstance = Modal.getInstance(modalRef.current);
     if (modalInstance) modalInstance.hide();
     setPassword("");
     setError("");

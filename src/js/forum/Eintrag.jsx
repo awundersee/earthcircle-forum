@@ -57,7 +57,7 @@ export default function Eintrag({ eintragID }) {
   if (!eintragID) return null;
   if (loading) return <p>Lade Einträge...</p>;
   if (error) return <div className="alert alert-danger">{error}</div>;
-  if (!eintrag.length) return <div className="border-bottom p-3">Kein Inhalt.</div>;
+  if (!eintrag.length) return <div className="border-bottom p-3 text-center">Kein Inhalt.</div>;
 
   // ... innerhalb der Komponente Eintrag
   const handleCommentCreated = (newComment) => {
