@@ -158,8 +158,8 @@ export default function CreateEntry() {
           <>
           <div className="alert alert-success">{success}</div>
           <div className="d-flex gap-2 align-items-center">
-            <a className="btn btn-primary" href={`./eintrag?eintragID=${successData.eintragID}`}>Zum Eintrag</a>
-            <a className="btn bg-white text-primary border border-primary" href="./">Zum Forum</a>
+            <a className="btn btn-primary" href={`/forum/eintrag?eintragID=${successData.eintragID}`}>Zum Eintrag</a>
+            <a className="btn bg-white text-primary border border-primary" href="/forum">Zum Forum</a>
           </div>
           </>
         )}

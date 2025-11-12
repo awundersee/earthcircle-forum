@@ -37,7 +37,7 @@ export default function EintraegeListe({ unterthemaID }) {
   return (
     <div className="eintraege-liste">
       {eintraege.map(e => (
-        <a href={`./eintrag?eintragID=${e.eintragID}`} key={e.eintragID} className="border-top p-3 text-decoration-none d-flex align-items-center justify-content-between">
+        <a href={`/eintrag?eintragID=${e.eintragID}`} key={e.eintragID} className="border-top p-3 text-decoration-none d-flex align-items-center justify-content-between">
           <div>
             <h3 className="fs-5 m-0 text-primary">{e.titel}</h3>
             <small className="text-dark">{e.kommentarAnzahl} Kommentar{e.kommentarAnzahl !== 1 ? "e" : ""}</small>

@@ -12,10 +12,10 @@ export default function ChangeProfile() {
       </p>
       <p>
         Es können neue, persönliche Profile angelegt und verwaltet werden. Die Verwaltungsfunktionen umfassen nur das Minimum:{" "}
-        <strong><a href="./passwort-vergessen" className="text-white decoration-underline">Passwort über Link zurücksetzen,</a></strong> sowie das <strong>Profil und die dazugehörigen Kommentare löschen.</strong>
+        <strong><a href="/forum/passwort-vergessen" className="text-white decoration-underline">Passwort über Link zurücksetzen,</a></strong> sowie das <strong>Profil und die dazugehörigen Kommentare löschen.</strong>
       </p>
       <p>
-        Mehr Informationen zum Urheber und Projekt gibt es <a href="../impressum" className="text-white decoration-underline">im Impressum.</a>
+        Mehr Informationen zum Urheber und Projekt gibt es <a href="/impressum" className="text-white decoration-underline">im Impressum.</a>
       </p>
     </>
   );

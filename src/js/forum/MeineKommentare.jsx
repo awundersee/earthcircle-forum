@@ -99,7 +99,7 @@ const confirmDelete = async () => {
               <h3 className="card-title fs-5 fw-bold mb-0 text-primary">{k.eintragTitel}</h3>
               <small>von {k.eintragVerfasser}</small>
             </div>
-            <a className="btn border border-primary text-primary btn-sm fw-bold bg-white bg-opacity-50 text-nowrap" href={`./forum/eintrag?eintragID=${k.eintragID}`}>Zum Eintrag</a>
+            <a className="btn border border-primary text-primary btn-sm fw-bold bg-white bg-opacity-50 text-nowrap" href={`/forum/eintrag?eintragID=${k.eintragID}`}>Zum Eintrag</a>
           </div>
           <div className="card-body">
             <div className="d-flex align-items-bottom justify-content-between gap-4 gap-md-3 flex-wrap flex-md-nowrap">

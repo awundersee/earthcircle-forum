@@ -92,7 +92,7 @@ const EntryContent = () => {
           <div className="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
             <div className="container-fluid py-3">
               <div className="align-items-center justify-content-end d-flex">
-                <a href="./" className="btn border-primary border text-primary">Zurück zum Forum</a>
+                <a href="/forum" className="btn border-primary border text-primary">Zurück zum Forum</a>
               </div>
             </div>
           </div>

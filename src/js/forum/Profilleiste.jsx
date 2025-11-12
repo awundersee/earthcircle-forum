@@ -31,7 +31,7 @@ export default function Profilleiste({profilForumLink, onLogout }) {
           <div className="align-items-md-center justify-content-between d-flex">
             <span>
               Hallo,{" "}
-              <a href="./forum/profil" className="text-black">
+              <a href="/forum/profil" className="text-black">
                 <strong>{username}</strong>
               </a>
             </span>
@@ -39,7 +39,7 @@ export default function Profilleiste({profilForumLink, onLogout }) {
             <div className="justify-content-end d-flex gap-3 flex-wrap">
 
                 {profilForumLink != "hidden" && (
-                  <a href="./forum" className="btn btn-primary text-nowrap">Zurück zum Forum</a>
+                  <a href="/forum" className="btn btn-primary text-nowrap">Zurück zum Forum</a>
                 )}
                 
                 <button className="btn btn-outline-primary text-nowrap" onClick={handleLogout}>

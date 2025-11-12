@@ -53,7 +53,7 @@ export default function HeaderForum( props ) {
                               <>
 
                                 {!props.registerLinkHidden ? (
-                                <a href="./forum/registrierung" 
+                                <a href="/forum/registrierung" 
                                   onClick={(e) => {
                                     e.preventDefault();
                                     handleRegisterClick();
@@ -63,7 +63,7 @@ export default function HeaderForum( props ) {
                                 </a>
                                 ):(
                                   <a
-                                    href="./forum"
+                                    href="/forum"
                                     className="btn bg-primary btn-lg me-3 text-white"
                                   >
                                     Zum Forum
@@ -72,7 +72,7 @@ export default function HeaderForum( props ) {
 
                                 {!props.forumLink ? (
                                   <a
-                                    href="./forum/login"
+                                    href="/forum/login"
                                     onClick={(e) => {
                                       e.preventDefault();
                                       handleLoginClick();
@@ -83,7 +83,7 @@ export default function HeaderForum( props ) {
                                   </a>
                                 ) : (
                                   <a
-                                    href="./forum"
+                                    href="/forum"
                                     className="btn text-primary bg-white btn-lg"
                                   >
                                     Zum Forum
@@ -123,7 +123,7 @@ export default function HeaderForum( props ) {
                       <p>
                         Falls Du bereits einen Account hast, kannst{" "}
                         <a 
-                          href="./forum/login" // Fallback, wenn JS deaktiviert ist
+                          href="/forum/login" // Fallback, wenn JS deaktiviert ist
                           onClick={(e) => {
                             e.preventDefault(); // verhindert den normalen Seitenwechsel
                             handleLoginClick();  // React-LoginForm anzeigen
@@ -185,7 +185,7 @@ export default function HeaderForum( props ) {
                         </span>{" "}
                         Falls Du noch keinen Account hast, kannst{" "}
                         <a 
-                          href="./forum/registrierung" 
+                          href="/forum/registrierung" 
                           onClick={(e) => {
                             e.preventDefault();
                             handleRegisterClick();
@@ -197,7 +197,7 @@ export default function HeaderForum( props ) {
 
                       <p className="text-secondary fs-6">
                         <span className="fw-bold">Passwort vergessen?</span> Dann einfach{" "}
-                        <a href="./forum/passwort-vergessen" className="text-secondary">
+                        <a href="/forum/passwort-vergessen" className="text-secondary">
                           Passwort zurücksetzen.
                         </a>
                       </p>

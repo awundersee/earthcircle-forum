@@ -41,7 +41,7 @@ export default function UnterthemenListe({ themaID }) {
           >
             <div className="p-3 bg-primary bg-opacity-25 opacity-75 text-dark" dangerouslySetInnerHTML={{ __html: u.inhalt ?? "" }} />
             <EintraegeListe unterthemaID={u.unterthemaID} />
-            <a href={`./forum/eintrag-verfassen?unterthemaID=${u.unterthemaID}`} className="btn-eintrag-verfassen p-3 bg-primary bg-opacity-25 text-primary w-100 d-inline-block text-decoration-none border-top border-primary border-bottom">Einen neuen Eintrag verfassen <i class="ph ph-caret-right"></i></a>
+            <a href={`/forum/eintrag-verfassen?unterthemaID=${u.unterthemaID}`} className="btn-eintrag-verfassen p-3 bg-primary bg-opacity-25 text-primary w-100 d-inline-block text-decoration-none border-top border-primary border-bottom">Einen neuen Eintrag verfassen <i class="ph ph-caret-right"></i></a>
           </div>
         </div>
       ))}

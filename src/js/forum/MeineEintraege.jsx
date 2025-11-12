@@ -60,7 +60,7 @@ export default function MeineEintraege() {
                 <small className="text-primary">Erstellt am: {new Date(e.erstelltAm).toLocaleDateString("de-DE")}</small>
                 <h3 className="card-title fs-5 fw-bold text-primary">{e.titel}</h3>
               </div>
-              <a className="btn border border-primary text-primary btn-sm fw-bold text-nowrap" href={`./forum/eintrag?eintragID=${e.eintragID}`}>Zum Eintrag</a>
+              <a className="btn border border-primary text-primary btn-sm fw-bold text-nowrap" href={`/forum/eintrag?eintragID=${e.eintragID}`}>Zum Eintrag</a>
             </div>
           </div>
           <div className="card-body">
