@@ -1,6 +1,8 @@
 title: "EarthCircle"
 slogan: "Für einen geschlossenen Kreislauf der Natur"
 description: "Projektseite für den Kurs IPWA01-01 – Programmierung von Webanwendungsoberflächen"
+descriptionBasic: "EarthCircle – Gemeinsam für den Klimaschutz. Informiere dich über CO2-Reduktion, nachhaltige Projekte und unsere Umweltinitiativen."
+imageURLBasic: "assets/img/hero-start-blank.jpg"
 baseurl: ""
 url: "http://localhost:4000"
 
