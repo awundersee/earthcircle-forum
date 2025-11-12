@@ -23,7 +23,7 @@ export default function Profilleiste({profilForumLink, onLogout }) {
               </a>
               {user.email && (
                 <>{" "}
-                <span className="on-profile-only">(${user.email})</span></>
+                <span className="on-profile-only">({user.email})</span></>
               )}
             </span>
 
