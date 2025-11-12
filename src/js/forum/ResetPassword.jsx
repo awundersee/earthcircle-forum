@@ -113,8 +113,8 @@ export default function ResetPassword() {
             <h2 className="fw-bold fs-4 text-primary">Passwort zurücksetzen</h2> 
           ):(
             <>
-            <a href="./" className="btn btn-primary me-3 text-nowrap">Zum Forum</a>
-            <a href="./login" className="btn text-primary border-primary text-nowrap">Zum Login</a>
+            <a href="./forum" className="btn btn-primary me-3 text-nowrap">Zum Forum</a>
+            <a href="./forum/login" className="btn text-primary border-primary text-nowrap">Zum Login</a>
             </>
           )}
 

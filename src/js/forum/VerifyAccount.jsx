@@ -50,8 +50,8 @@ export default function VerfifyAccount() {
                     )}
                   </h2> 
                   <div class="d-flex gap-3 align-items-center">
-                    <a href="./" className="btn btn-primary text-nowrap">Zum Forum</a>
-                    <a href="./login" className="btn text-primary border-primary text-nowrap">Zum Login</a>
+                    <a href="./forum" className="btn btn-primary text-nowrap">Zum Forum</a>
+                    <a href="./forum/login" className="btn text-primary border-primary text-nowrap">Zum Login</a>
                   </div>
               </div>
             </div>            

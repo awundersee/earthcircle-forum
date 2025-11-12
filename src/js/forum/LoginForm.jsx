@@ -100,7 +100,7 @@ const LoginForm = () => {
       {error && <div className="alert alert-danger mt-3">{error}</div>}
 
       {error === "Falsches Passwort" && (
-        <div className="text-primary p-3"><span className="fw-bold">Passwort vergessen?</span> Du kannst Dein <a href="./passwort-vergessen" className="text-primary text-decoration-underline">Passwort auch zurücksetzen.</a></div>
+        <div className="text-primary p-3"><span className="fw-bold">Passwort vergessen?</span> Du kannst Dein <a href="./forum/passwort-vergessen" className="text-primary text-decoration-underline">Passwort auch zurücksetzen.</a></div>
       )}
 
       {success && <div className="alert alert-success mt-3">{success}</div>}       
