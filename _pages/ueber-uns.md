@@ -2,6 +2,8 @@
 layout: default
 title: Über uns
 permalink: ueber-uns
+description: "EarthCircle ist eine NGO für Klimaschutz und Nachhaltigkeit. Erfahre mehr über unsere Mission, Werte und Projekte weltweit."
+imageURL: "assets/img/hero-ueber_uns-blank.jpg"
 ---
 
 <section class="hero-banner hero-ueber-uns d-flex mobile-hero">

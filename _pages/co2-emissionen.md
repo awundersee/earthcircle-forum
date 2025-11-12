@@ -2,6 +2,8 @@
 layout: default
 title: CO2 Emissionen
 permalink: co2-emissionen
+description: "Alles über CO2-Emissionen: Ursachen, Folgen und effektive Strategien zur Reduktion. EarthCircle informiert und motiviert zum Handeln."
+imageURL: "assets/img/hero-co2-emissionen-blank.jpg"
 ---
 
 <section class="hero-banner hero-emissionen d-flex mobile-hero">

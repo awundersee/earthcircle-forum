@@ -2,6 +2,8 @@
 layout: default
 title: "Blog"
 permalink: blog
+description: "EarthCircle Blog – Neuigkeiten, Tipps und Insights rund um Klimaschutz, CO2-Reduktion und nachhaltiges Leben."
+imageURL: "assets/img/nachhaltig-mobil-alternativen-zum-auto-hero.jpg"
 ---
 
 <section>

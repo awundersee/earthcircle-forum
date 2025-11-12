@@ -2,6 +2,8 @@
 layout: default
 title: "Kontakt"
 permalink: kontakt
+description: "Kontaktiere EarthCircle – wir freuen uns auf deine Fragen, Anregungen oder Ideen für gemeinsame Klimaschutzprojekte."
+imageURL: "assets/img/hero-kontakt-blank.jpg"
 ---
 
 <section class="hero-banner hero-kontakt d-flex mobile-hero">
