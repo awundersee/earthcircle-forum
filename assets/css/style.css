@@ -673,6 +673,14 @@ footer .invalid-feedback {
 	border-radius: 0.5rem;
 }
 
+.on-profile-only {
+	display: none;
+}
+
+body.profil .on-profile-only {
+	display: inline-block;
+}
+
 /* Hover */
 
 @media (hover: hover) and (pointer: fine) {

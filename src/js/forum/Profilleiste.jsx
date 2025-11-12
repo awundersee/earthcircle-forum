@@ -20,8 +20,8 @@ export default function Profilleiste({profilForumLink, onLogout }) {
               Hallo,{" "}
               <a href="/forum/profil" className="text-black">
                 <strong>{user.username}</strong>
-                {user.email && ` (${user.email})`}
-              </a>
+              </a>{" "}
+              <span className="on-profile-only">({user.email && ` (${user.email})`})</span>
             </span>
 
             <div className="justify-content-end d-flex gap-3 flex-wrap">

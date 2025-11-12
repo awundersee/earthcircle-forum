@@ -97,7 +97,7 @@ export default function Eintrag({ eintragID }) {
                   <p>
                     von {e.benutzername}
                   </p>
-                  <div class="kategorie-wrapper d-flex gap-1 align-items-center mb-4 mb-lg-0">
+                  <div class="kategorie-wrapper d-flex gap-1 align-items-center mb-4 mb-lg-0 flex-wrap">
                     {e.themaTitel && (
                       <span className="badge bg-light bg-opacity-75 text-primary fw-regular fw-normal fs-6">
                         {e.themaTitel}
