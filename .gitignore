@@ -56,3 +56,5 @@ gitpush.sh
 start-jekyll.sh
 compile-react.sh
 _config_prod.yml
+.env
+.env.development
