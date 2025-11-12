@@ -146,7 +146,7 @@ hmtl, body {
 
 /* Header */
 
-.ueber-uns nav .ueber-uns, .co2-emissionen nav .co2-emissionen, .blog nav .blog, .kontakt nav .kontakt {
+.ueber-uns nav .ueber-uns, .co2-emissionen nav .co2-emissionen, .blog nav .blog, .kontakt nav .kontakt, .forum nav .forum {
 	color:var(--bs-dark) !important;
 	opacity: 0.8;
 }
@@ -344,6 +344,15 @@ table tbody tr:last-child td:nth-child(3) {
 
 /* Hero Banner */
 
+.outer-forum-wrapper.logged-in {
+	max-height: 390px;
+	overflow: hidden;
+}
+
+.outer-forum-wrapper.logged-in p.lead, .outer-forum-wrapper.logged-in h2 {
+	display: none;
+}
+
 .hero-banner {
 	position: relative;
 	background-repeat: no-repeat;
@@ -383,6 +392,10 @@ table tbody tr:last-child td:nth-child(3) {
 
 .hero-support {
 	background-image:url(../img/hero-support-blank.jpg);
+}
+
+.hero-forum {
+	background-image:url(../img/hero-forum.jpg);
 }
 
 /* Chart */
@@ -548,6 +561,118 @@ footer .invalid-feedback {
 	border-radius: var(--bs-border-radius);
 }
 
+/* Forum */
+
+.neuen-eintrag-verfassen .hero-banner a.btn-login {
+	display: none;
+}
+
+.bg-primary.bg-reverse .text-primary {
+	color:#fff !important;
+}
+
+.bg-primary.bg-reverse .btn.btn-primary {
+	background-color:#000 !important;
+	border-color:#000 !important;
+}
+
+.btn-eintrag-verfassen {
+	position: relative;
+}
+
+.btn-eintrag-verfassen:after, .btn-eintrag-verfassen:before {
+	position: absolute;
+	content: "";
+	left:0;
+	right:0;
+	bottom:0;
+	height:0.5rem;
+	background: #000000;
+	background: linear-gradient(0deg,rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.btn-eintrag-verfassen:before {
+	bottom:auto;
+	top:-0.5rem;
+}
+
+.bg-opacity-15 {
+	--bs-bg-opacity: 0.15 !important;
+}
+
+.row-comment-wrapper .comment-wrapper {
+	border-left:1px solid var(--bs-primary);
+	border-bottom:1px solid var(--bs-primary);
+	background-color:rgba(var(--bs-primary-rgb), 0.08);
+}
+
+.ebene-0 > .comment-wrapper {
+	border-left:1px solid var(--bs-primary);
+	border-top:1px solid var(--bs-primary);
+	border-bottom:none;
+}
+
+.comment-wrapper {
+	margin-left:0.75rem;
+}
+
+.comment-wrapper.margin-start-0 {
+	margin-left:0;
+}
+
+.new-comment {
+  background-color: #fff3cd !important; /* hellgelb, z.B. Bootstrap Warn-Farbe */
+  transition: background-color 1s ease;
+}
+
+.row-comment-wrapper .row-comment-wrapper .comment-wrapper {
+	width:100%;
+	width:calc(100% - 1.5rem);
+}
+
+.comment-wrapper .create-comment-wrapper {
+	margin-top:1.5rem !important;
+}
+
+.min-height-inner {
+	min-height:100vh;
+	min-height:calc(100vh - 540px);
+}
+
+.accordion-button:after {
+  position: absolute;
+  right: 1rem;           
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg) !important;
+}
+
+.accordion-button.collapsed:after {
+  transform: translateY(-50%) !important;
+}
+
+.accordion-button {
+  white-space: normal;
+  padding-right: 3rem;    
+  position: relative;
+}
+
+.accordion-text {
+  word-break: normal;    
+  overflow-wrap: break-word;  
+  hyphens: auto; 
+}
+
+.overlay-blocker {
+	position: absolute;
+	left:-1rem;
+	top:-1rem;
+	right:-1rem;
+	bottom:-1rem;
+	z-index: 1000;
+	background-color:rgba(var(--bs-primary-rgb), 0.5);
+	border-radius: 0.5rem;
+}
+
 /* Hover */
 
 @media (hover: hover) and (pointer: fine) {
@@ -587,6 +712,18 @@ footer .invalid-feedback {
 
 /* Responsive */
 
+@media (max-width:1299px) {
+
+	.header-logo {
+    	height: 40px;
+	}
+
+	.h1, h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
 @media (max-width:1199px) {
 
 	:root {
@@ -617,6 +754,14 @@ footer .invalid-feedback {
 }
 
 @media (max-width:991px) {
+
+	.logged-in .hero-banner.hero-forum {
+		display: none !important;
+	}
+
+	.outer-forum-wrapper.logged-in {
+		border-bottom: 1px solid var(--bs-primary);
+	}
 
 	.table td:nth-child(1), .table th:nth-child(1), .table td:nth-child(2), .table th:nth-child(2), .table td:nth-child(3), .table th:nth-child(3) {
 		width:33.33333%;
@@ -665,6 +810,10 @@ footer .invalid-feedback {
 	.hero-support .c-banner {
 		background-image:url(../img/hero-support-blank.jpg);
 	}
+
+	.hero-forum .c-banner {
+		background-image:url(../img/hero-forum.jpg);
+	}	
 
 	#circle-container {
 		width: 250px;

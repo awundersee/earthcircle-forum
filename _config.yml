@@ -1,8 +1,8 @@
 title: "EarthCircle"
 slogan: "Für einen geschlossenen Kreislauf der Natur"
-description: "Projektseite für den Kurs IPWA01-01 – Programmierung von Webanwendungsoberflächen"
-baseurl: "/earthcircle"
-url: "https://awundersee.github.io"
+description: "Projektseite für den Kurs DLBITPEWP01-01 – Projekt: Einstieg in die Web-Programmierung"
+baseurl: "/"
+url: "https://earthcircle.wundersee.dev"
 
 markdown: kramdown
 
