@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import EintraegeListe from "./EintraegeListe.jsx";
-import API_BASE from "../config";
+import GetEntries from "./GetEntries.jsx";
+import API_BASE from "../config.js";
 
-export default function UnterthemenListe({ themaID }) {
+export default function GetSubtopics({ themaID }) {
   const [unterthemen, setUnterthemen] = useState([]);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function UnterthemenListe({ themaID }) {
             className="accordion-collapse collapse" 
           >
             <div className="p-3 bg-primary bg-opacity-25 opacity-75 text-dark" dangerouslySetInnerHTML={{ __html: u.inhalt ?? "" }} />
-            <EintraegeListe unterthemaID={u.unterthemaID} />
+            <GetEntries unterthemaID={u.unterthemaID} />
             <a href={`/forum/eintrag-verfassen?unterthemaID=${u.unterthemaID}`} className="btn-eintrag-verfassen p-3 bg-primary bg-opacity-25 text-primary w-100 d-inline-block text-decoration-none border-top border-primary border-bottom">Einen neuen Eintrag verfassen <i class="ph ph-caret-right"></i></a>
           </div>
         </div>

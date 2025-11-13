@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API_BASE from "../config";
 
-export default function EintraegeListe({ unterthemaID }) {
+export default function GetEntries({ unterthemaID }) {
   const [eintraege, setEintraege] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

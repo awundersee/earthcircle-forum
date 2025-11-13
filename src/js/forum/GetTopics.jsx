@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import API_BASE from "../config.js";
-import UnterthemenListe from "./Unterthemenliste.jsx";
+import GetSubtopics from "./GetSubtopics.jsx";
 
-export default function ThemenListe() {
+export default function GetTopics() {
   const [themen, setThemen] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function ThemenListe() {
                     </div>
 
                     {/* Unterthemen laden */}
-                    <UnterthemenListe themaID={t.themaID} />
+                    <GetSubtopics themaID={t.themaID} />
 
                   </div>
                 </div>

@@ -5,7 +5,7 @@ import GetComments from "./GetComments"; // Import hinzufügen
 import API_BASE from "../config";
 import { useAuth } from "./authContext";
 
-export default function Eintrag({ eintragID }) {
+export default function Entry({ eintragID }) {
   const { loggedIn } = useAuth();
   const [eintrag, setEintrag] = useState([]);
   const [loading, setLoading] = useState(true);

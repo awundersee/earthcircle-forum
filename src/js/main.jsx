@@ -8,14 +8,14 @@ import CustomForm from "@/prototyp/CustomForm.jsx";
 import HeaderForum from "@/forum/Header.jsx";
 import DeleteProfile from "@/forum/DeleteProfile.jsx";
 import ChangeProfile from "@/forum/ChangeProfile.jsx";
-import Profilleiste from "@/forum/Profilleiste.jsx";
-import Themenliste from "@/forum/Themenliste.jsx";
+import UserPanel from "@/forum/UserPanel.jsx";
+import GetTopics from "@/forum/GetTopics.jsx";
 import CreateEntry from "@/forum/CreateEntry.jsx";
 import LoginForm from "@/forum/LoginForm.jsx";
 import RegisterForm from "@/forum/RegisterForm.jsx";
-import MeineEintraege from "@/forum/MeineEintraege.jsx";
-import MeineKommentare from "@/forum/MeineKommentare.jsx";
-import Eintrag from "@/forum/Eintrag.jsx";
+import MyEntries from "@/forum/MyEntries.jsx";
+import MyComments from "@/forum/MyComments.jsx";
+import Entry from "@/forum/Entry.jsx";
 import ResetPassword from "@/forum/ResetPassword.jsx";
 import VerifyAccount from "@/forum/VerifyAccount.jsx";
 
@@ -40,7 +40,7 @@ const ResetPasswortContent = () => {
     {loggedIn && (
       <>
         <section className="border-top border-primary">
-          <Profilleiste onLogout={handleLogout} />
+          <UserPanel onLogout={handleLogout} />
         </section>
       </>
     )}
@@ -86,7 +86,7 @@ const EntryContent = () => {
     <>
     <section className="border-top border-primary">
       {loggedIn ? (
-        <Profilleiste onLogout={handleLogout} />
+        <UserPanel onLogout={handleLogout} />
       ) : (
         <div className="border-bottom border-primary">
           <div className="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
@@ -98,13 +98,13 @@ const EntryContent = () => {
           </div>
         </div>
       )}
-      <Eintrag eintragID={eintragID}/>
+      <Entry eintragID={eintragID}/>
     </section>
     <section className="pt-5 border-top border-primary">
       <div className="d-flex align-items-center justify-content-center">
         <h2 className="fs-5 text-primary fw-bold">Andere Themen aus unserem Forum</h2>
       </div>
-      <Themenliste />
+      <GetTopics />
     </section>
     </>
   );
@@ -142,7 +142,7 @@ const CreateEntryContent = () => {
     ) : (
       <>
         <section className="border-top border-primary">
-          <Profilleiste onLogout={handleLogout} />
+          <UserPanel onLogout={handleLogout} />
         </section>
         <section className="bg-primary bg-opacity-25">
           <div className="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
@@ -173,10 +173,10 @@ const ProfilContent = () => {
             <div className="container-fluid py-5">
               <div className="row">
                 <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0">
-                  <MeineEintraege />
+                  <MyEntries />
                 </div>
                 <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-5 mt-lg-0">
-                  <MeineKommentare />
+                  <MyComments />
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ const ProfilContent = () => {
 const ForumContent = () => (
   <>
     <HeaderForum profilForumLink="hidden" />
-    <Themenliste />
+    <GetTopics />
   </>
 );
 
@@ -227,7 +227,7 @@ const RegisterContent = () => {
 
       {loggedIn ? (
         <>
-        <Profilleiste onLogout={handleLogout} />
+        <UserPanel onLogout={handleLogout} />
         <section className="bg-primary bg-opacity-25">
           <div className="px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5">
             <div className="container-fluid py-5">

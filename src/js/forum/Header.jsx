@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import Profilleiste from "./Profilleiste";
+import UserPanel from "./UserPanel";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 import { useAuth } from "./authContext";
@@ -228,7 +228,7 @@ export default function HeaderForum( props ) {
       )}
 
       {/* UserPanel nur anzeigen, wenn eingeloggt */}
-      {loggedIn && <Profilleiste profilForumLink={props.profilForumLink} onLogout={handleLogout} />}   
+      {loggedIn && <UserPanel profilForumLink={props.profilForumLink} onLogout={handleLogout} />}   
     </>
   );
 }

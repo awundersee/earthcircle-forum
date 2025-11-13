@@ -3,7 +3,7 @@ import API_BASE from "../config";
 import { AuthContext } from "@/forum/AuthContext";
 import DeleteModal from "./DeleteModal";
 
-export default function MeineEintraege() {
+export default function MyEntries() {
   const { loggedIn } = useContext(AuthContext);
   const [eintraege, setEintraege] = useState([]);
   const [loading, setLoading] = useState(true);

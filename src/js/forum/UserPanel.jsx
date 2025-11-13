@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "./authContext";
 
-export default function Profilleiste({profilForumLink, onLogout }) {
+export default function UserPanel({profilForumLink, onLogout }) {
   const { loggedIn, user, logout } = useAuth();
 
   const handleLogout = () => {

@@ -3,7 +3,7 @@ import API_BASE from "../config";
 import { AuthContext } from "@/forum/AuthContext";
 import DeleteModal from "./DeleteModal";
 
-export default function MeineKommentare() {
+export default function MyComments() {
   const { loggedIn } = useContext(AuthContext);
   const [kommentare, setKommentare] = useState([]);
   const [loading, setLoading] = useState(true);
