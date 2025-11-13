@@ -147,7 +147,7 @@ export default function HeaderForum( props ) {
 
                     <div className="col-xl-2 d-flex justify-content-end align-items-start order-0 order-xl-3 mb-4 mb-xl-0">
                       <button
-                        className="bg-transparent border-0 p-0"
+                        className="bg-transparent border-0 p-0 text-dark"
                         onClick={(e) => {
                           e.preventDefault();
                           handleCloseClick();
@@ -211,7 +211,7 @@ export default function HeaderForum( props ) {
                     
                     <div className="col-xl-2 d-flex justify-content-end align-items-start order-0 order-xl-3 mb-4 mb-xl-0">
                       <button
-                        className="bg-transparent border-0 p-0"
+                        className="bg-transparent border-0 p-0 text-dark"
                         onClick={(e) => {
                           e.preventDefault();
                           handleCloseClick(); 
